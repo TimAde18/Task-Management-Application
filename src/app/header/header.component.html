@@ -2,6 +2,15 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Task Manager</a>
     <a class="nav-link" href="#">User Auth/ User Login</a>
-    <button (click)="toggleDarkTheme()">Enable Dark Mode</button>
+    <div>
+      <input
+        type="checkbox"
+        id="mode-toggle"
+        (click)="toggleDarkTheme()"
+        [checked]="isChecked"
+      />
+      <label for="mode-toggle"></label>
+    </div>
+    <!--<button (click)="toggleDarkTheme()">Enable Dark Mode</button>-->
   </div>
 </nav>
